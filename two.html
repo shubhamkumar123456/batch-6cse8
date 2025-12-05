@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="autocad-course (1) (1).avif" width="200px" height="200px" alt="">
+
+        <p id="demo">This is title</p>
+    </div>
+    <button>click me</button>
+
+    <ul class="hero">
+        <li>Mango</li>
+        <li>Kiwi</li>
+        <li>Apple</li>
+    </ul>
+
+    <script>
+    //    how to get an element in javascript  -->
+    // a) document.getElementById(name)
+    // b) document.getElementByClassName(name)
+    // c) document.getElementByName(name)
+    // d) document.querySelector(name)
+    // e) document.querySelectorAll(name)
+
+    // let x = document.getElementById('demo')
+    // console.log(x)
+    // x.style.backgroundColor = 'green'
+
+    let x = document.getElementsByClassName('hero')
+    console.log(x)
+    console.log(x[0])
+
+    x[0].style.backgroundColor = 'yellow'
+
+    </script>
+
+    <script src=""></script>
+</body>
+</html>
