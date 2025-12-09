@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #para{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Count : <span id="count">0</span></h1>
+    <button onclick="abc()">Increment</button>
+    <button onclick="efg()">Decrement</button>
+
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dolores!</p>
+
+    <button onclick="changeColor()">change Color</button>
+
+    <script>
+
+        let x = document.getElementById('count');
+        console.log(x)
+
+        let c = 0
+
+        function abc(){
+                c = c+1;  //1
+                console.log(c)
+                x.innerHTML = c
+        }
+
+
+
+        function efg(){
+
+            if(c>0){
+            c= c-1;
+            x.innerHTML = c
+            }
+           
+        }
+
+
+        let para = document.getElementById('para')
+        console.log(para)  // <p>
+
+        function changeColor(){
+            para.style.backgroundColor = 'red'
+        }
+
+
+  
+    </script>
+</body>
+</html>
