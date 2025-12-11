@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container{
+            width: 80%;
+            height: 400px;
+            background-color: aqua;
+            display: flex;
+        }
+
+        img{
+            height: 100%;
+            width: 80%;
+        }
+        button{
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <button> < </button>
+        <img id="image" src="https://media.istockphoto.com/id/1489566726/photo/leopard-in-sri-lanka.jpg?s=612x612&w=0&k=20&c=kIHqKhwO_JCq94l7yg8zkZuY-v-BbiaaRxr-giy97w4=" alt="">
+        <button onclick="xyz()"> > </button>
+    </div>
+
+    <script>
+        let x = document.getElementById('image');
+        console.log(x)
+
+        let arr = [
+            "https://media.istockphoto.com/id/1489566726/photo/leopard-in-sri-lanka.jpg?s=612x612&w=0&k=20&c=kIHqKhwO_JCq94l7yg8zkZuY-v-BbiaaRxr-giy97w4=",
+
+            "https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg",
+
+
+            "https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?cs=srgb&dl=pexels-hsapir-1054655.jpg&fm=jpg",
+
+            "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg",
+
+            "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?cs=srgb&dl=pexels-pixabay-326055.jpg&fm=jpg"
+        ]
+            let c = 0
+        function xyz(){
+            // console.log("hello")
+            c++;
+            if(c > arr.length-1){
+                c= 0
+            } 
+            console.log(c)
+            x.src = arr[c]
+        }
+    </script>
+</body>
+</html>
