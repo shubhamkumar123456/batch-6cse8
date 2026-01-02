@@ -24,3 +24,44 @@
 
 // delete a collection --> db.collectionName.drop()
 // delete Database --> db.dropDatabase()
+
+// other filter --> 
+// find in nested object-->
+// example -->  db.users.find({"details.city":"kanpur"})
+
+
+
+let users = [ 
+        {
+           name:"three",
+           email:"three@gmail.com",
+           password:"1234567",
+           details:{
+                house:11,
+                city:"kanpur",
+                state:"up"
+           }     
+        },
+        {
+           name:"four",
+           email:"four@gmail.com",
+           password:"1234567",
+           details:{
+                house:11,
+                city:"kanpur",
+                state:"up"
+           }     
+        },
+        {
+           name:"five",
+           email:"five@gmail.com",
+           password:"1234567",
+           details:{
+                house:11,
+                city:"lucknow",
+                state:"up"
+           }     
+        },
+
+]
+
