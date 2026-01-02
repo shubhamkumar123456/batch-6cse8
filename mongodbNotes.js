@@ -65,3 +65,7 @@ let users = [
 
 ]
 
+
+// other filter method --> gt, gte , eq ,ne ,lt lte 
+
+// db.collectionName.find({price:{$gte:35000}})
